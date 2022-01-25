@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const uri = 'mongodb+srv://new_user:qyBx2u3BYBpoyv86@cluster0.avkuj.mongodb.net/testing?retryWrites=true&w=majority'
 const app = express()
 const port = 5000
-var blog = require('./bookSchema')
+const blog = require('./bookSchema')
 
 mongoose.connect(uri, { useNewUrlParser: true })
 const connection = mongoose.connection;

@@ -22,6 +22,8 @@ const typeDefs = gql`
     title: String
     author: String
     comment: [String]
+    img_url: String
+    about: String
   }
 
   type User {
@@ -37,7 +39,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addBook(title: String, comment: [String], author: String): Book
+    addBook(title: String, comment: [String], author: String, img_url: String, about: String): Book
   }
 
   type Mutation {
@@ -46,6 +48,8 @@ const typeDefs = gql`
       title: String
       comment: [String]
       author: String
+      about: String
+      img_url: String
     ): Book
   }
 

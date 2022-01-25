@@ -15,9 +15,6 @@ const verifyToken = async(resolve, _, __, context) => {
 };
 
 const auth = {
-    Query: {
-        books: verifyToken,
-    },
     Mutation: {
         updateBook: verifyToken,
         deleteBook: verifyToken,
